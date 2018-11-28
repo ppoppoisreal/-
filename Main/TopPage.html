@@ -1,15 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><head>
-<title>MangJu HomePage</title>
+<title>ppoppo HomePage</title>
 </head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <body oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
-   <?
- 
-   echo "<link rel=stylesheet href='/css/manucss.css' type='text/css'> ";
-   echo " <script src='/js/jquery.js'></script>";
-   ?>
 
 <script language=JavaScript>
 <!--
@@ -116,40 +111,8 @@ $("#popLayer").center();
    <li><a href='javascript:;' onclick='javascript:Frameset("2")'><span>Who Am I</span></a></li>
    <li><a href='javascript:;' onclick='javascript:Frameset("3")'><span>PortFolio</span></a></li>
    <li><a href='javascript:;' onclick='javascript:Frameset("4")'><span>This HomePage</span></a></li>
-  <li class='last'>
-  <? if($_SESSION['admin_id']==null){ ?>
-   <a href="javascript:;" onClick="javascript:showPopup()"><span>Login</span></a>
-    <? }else { ?>
-   <a href='/user/logoutpage.php'><span>Logout</span></a>
-   <? } ?></li>
 </ul>
 </div>
-<div id="popLayer" style="display:none;">
- 
-<div align="center">
- <table >
-  <tr>
-   <td width="800">
-  
-<img src="/Photo/user/id_log.jpg">
-   			<input type="text" id="id" name="id" ime-mode:'disabled' text-transform: 'lowercase' >
-   			</td>
-   			
-   			
-				</tr><tr><td>
-   
-<img src="/Photo/user/pass_log.jpg">
-			<input type="password" id="pw"name="pw" > <label id="passlabel" /></td>
-				</tr> 
-  <tr>
-   <td align="center">
-  
-     <input type="button" id="getResult" name="getResult" value="로그인"/>
-     <input type="button" id="hidePopup" name="hidePopup" value="취소"/> 
-   </td>
-  </tr>
- </table>
- 
-</div> </div>
+
     </body> 
 </html>
